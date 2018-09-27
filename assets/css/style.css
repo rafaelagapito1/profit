@@ -1,0 +1,288 @@
+
+html {
+  font-family: 'Ubuntu'!important;
+}
+.carousel-indicators .active {
+  background-color: #FF9F1C;
+}
+.laranja {
+  color:#FF9F1C;
+}
+.laranja2 {
+  background-color:#FF9F1C;
+}
+.btn-danger {
+  background-color:#ff9f1c!important;
+}
+.btn-danger:hover {
+  background-color:#ff9f1c!important;
+}
+.btn-danger:focus {
+  background-color:#ff9f1c!important;
+}
+.btn-danger:active {
+  background-color:#ff9f1c!important;
+}
+
+
+.azul {
+  color:#011627;
+}
+.azul2 {
+  background-color:#011627;
+}
+.verde {
+  color:#2EC4B6;
+}
+.verde2 {
+  background-color:#2EC4B6;
+}
+.navbar.navbar-dark form .md-form input {
+  border-bottom: 1px solid #000!important;
+}
+.reset-margin{
+  margin-right: 0px!important;
+  padding-right: 0px;
+  margin-left: 0px;
+}
+.kart{
+  position: absolute;
+    border-right: 1px solid #000!important;
+    margin-top: -33px;
+    padding-right: 25px;
+    margin-left: 150%;
+}
+#seach::-webkit-input-placeholder{
+  color:#000!important;
+  font-style: bold;
+}
+.md-form input[type=date]:focus:not([readonly]), .md-form input[type=datetime-local]:focus:not([readonly]), .md-form input[type=email]:focus:not([readonly]), .md-form input[type=number]:focus:not([readonly]), .md-form input[type=password]:focus:not([readonly]), .md-form input[type=search-md]:focus:not([readonly]), .md-form input[type=search]:focus:not([readonly]), .md-form input[type=tel]:focus:not([readonly]), .md-form input[type=text]:focus:not([readonly]), .md-form input[type=time]:focus:not([readonly]), .md-form input[type=url]:focus:not([readonly]), .md-form textarea.md-textarea:focus:not([readonly]) {
+  -webkit-box-shadow: 0 1px 0 0 #000610;
+  box-shadow: 0 1px 0 0 #000000;
+  border-bottom: 1px solid #000000;
+}
+
+.navbar.navbar-dark .navbar-toggler-icon {
+  background-image: none;
+  cursor: pointer;
+}
+.carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
+  width: 51px;
+  height: 60px;
+}
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 21%;
+  top: 36%;
+  z-index: 10;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #fff;
+  text-align: center;
+}
+
+.texto-banner{
+  font-weight: 900;
+  text-align: left;
+  text-transform: capitalize;
+}
+.linha {
+  width: 65px;
+  height: 6px;
+  float: left;
+  margin-top: 0px;
+}
+#mobi {display: none;}
+@media screen and (max-width: 600px) {
+  #mobi {display:block;}
+.buy {
+  opacity: 1!important;
+}
+.onze {
+  display:none;
+}
+.doze {
+  display:none;
+}
+.card-body {
+ 
+  padding: 0rem!important;
+}
+#bugou {
+  width: 15px;
+
+  float: left;
+}
+.gg {
+  height: 160px!important;
+}
+  .rr {display: none}
+  .ll {
+    display: none;
+  }
+  .kart {
+    position: absolute;
+    border-right: 0px solid #000!important;
+    margin-top: -75px;
+    padding-right: 0px;
+    margin-left: 82%;
+  }
+  .navbar-brand {
+    display: inline-block;
+    padding-top: 6px;
+    padding-bottom: 0px;
+    margin-right: 0rem;
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: inherit;
+    margin-bottom: -35px;
+    width: 100%;
+}
+.navbar-toggler{
+  margin: 0px;
+    margin-left: -13px;
+}
+.menu-m {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  float: none;
+}
+.menu-i {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center!important;
+  float: none;
+}
+.bandeira img{
+  width: 50px;
+}
+
+.m {
+  display:block!important;
+}
+.d {
+  display:none!important;
+}
+.texto-banner {
+  font-size: 29px;
+ 
+}
+
+.carousel-caption {
+  top: 7%!Important;
+  left: 11%!important;
+}
+.carousel-control-prev{
+  display: none;
+}
+.carousel-control-next{
+  display: none;
+}
+
+}
+
+
+
+@media screen and (min-width: 601px) {
+  .m {
+    display:none!important;
+  }
+  .d {
+    display:block!important;
+  }
+
+}
+
+
+/* Tablet and up */
+
+
+
+a {
+  
+    color: #000000;
+
+}
+a :hover{
+  
+  color: #000000;
+
+}
+.pp {
+font-size: 30px
+}
+.rr {
+  position: absolute;
+  margin-top: 225px!important;
+  margin-left: 12px;
+  z-index: 99;
+}
+
+.ll {
+  position: absolute;
+  margin-top: 225px!important;
+  margin-left: -103%!important;
+  z-index: 99;
+}
+.pp :hover{
+  color: #000000;
+  }
+
+  .cinza {
+    margin-bottom: 0rem;
+  }
+  .gray{
+    color:#7A7A7A!important;
+  }
+.risco {
+  text-decoration: line-through;
+  font-weight: 500;
+}
+.novo {
+  
+  color:#2EC4B6;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0px
+}
+.btn-secondary {
+  background-color: #2ec4b6!important;
+}
+
+
+.btn-secondary:not([disabled]):not(.disabled):active, .btn-secondary:not([disabled]):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  background-color: #2ec4b6 !important;
+}
+
+.star  {
+  width: 100px;
+}
+.compra :hover{
+  background: #f2f2f2;
+
+}
+
+.buy {
+  opacity: 0;
+}
+.buy:hover {
+  opacity: 1;
+}
+
+.card {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+  border: 0;
+  font-weight: 400;
+}
+
+.flag {
+  position: absolute;
+  width: 100px;
+  margin-left: 155px;
+}

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link href="node_modules/mdbootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="node_modules/mdbootstrap/css/mdb.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="node_modules/mdbootstrap/css/style.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <title>Profit - Desafio</title>
+</head>
+
+<body>
+  <div class="" id="app">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">
+          <img src="assets/imgs/Logo.svg" alt="">
+        </a>
+        <button class="navbar-toggler text-dark " type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="fas fa-bars" style=" font-size: 30px;"></i>
+          </span>
+        </button>
+        <div class="row navbar-collapse">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <form class="text-dark">
+              <div class="md-form my-0">
+                <input id="seach" class="form-control text-dark" type="text" v-bind:placeholder='corpo.seach' style="width:100%!important;    margin-left: 0px;">
+              </div>
+            </form>
+            <a href="" class="kart ">
+              <img src="assets/imgs/minicart.svg" alt="">
+            </a>
+          </div>
+          <div class="col-md-5 ">
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="basicExampleNav">
+              <div class="col-md-12 text-right ">
+                <div class="row">
+                  <div class="col-md-6 menu-m">
+                    <a href="#" class="text-dark ">
+                      <img src="assets/imgs/person.svg" alt=""> {{corpo.user}}
+
+                    </a>
+                  </div>
+                  <div class="col-md-6 text-right reset-margin menu-i">
+                    <a class="bandeira" v-on:click="pt()">
+                      <img src="assets/imgs/BR.svg" alt="">
+                    </a>
+                    <a class="bandeira" v-on:click="sh()">
+                      <img src="assets/imgs/ES.svg" alt="">
+                    </a>
+                    <a class="bandeira" v-on:click="en()">
+                      <img src="assets/imgs/GB.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Collapsible content -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--/.Navbar-->
+
+    <div class="">
+      <!--Carousel Wrapper-->
+      <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-2" data-slide-to="1"></li>
+          <li data-target="#carousel-example-2" data-slide-to="2"></li>
+          <li data-target="#carousel-example-2" data-slide-to="3"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner " role="listbox">
+          <div class="carousel-item active ">
+            <div class="view">
+
+              <img class="d-block w-100 d " src="assets/imgs/banner.png" alt="Third slide">
+              <img class="d-block w-100 m" src="assets/imgs/banner-m.png" alt="Third slide">
+            </div>
+            <div class="carousel-caption">
+              <h1 class="texto-banner">{{corpo.bannertext}}</h1>
+              <h1 class="texto-banner">{{corpo.bannertext2}}</h1>
+              <hr class="linha laranja2">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <img class="d-block w-100 d " src="assets/imgs/banner.png" alt="Third slide">
+              <img class="d-block w-100 m" src="assets/imgs/banner-m.png" alt="Third slide">
+            </div>
+            <div class="carousel-caption">
+              <h1 class="texto-banner">{{corpo.bannertext}}</h1>
+              <h1 class="texto-banner">{{corpo.bannertext2}}</h1>
+              <hr class="linha laranja2">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <img class="d-block w-100 d " src="assets/imgs/banner.png" alt="Third slide">
+              <img class="d-block w-100 m" src="assets/imgs/banner-m.png" alt="Third slide">
+            </div>
+            <div class="carousel-caption">
+              <h1 class="texto-banner">{{corpo.bannertext}}</h1>
+              <h1 class="texto-banner">{{corpo.bannertext2}}</h1>
+              <hr class="linha laranja2">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <img class="d-block w-100 d " src="assets/imgs/banner.png" alt="Third slide">
+              <img class="d-block w-100 m" src="assets/imgs/banner-m.png" alt="Third slide">
+            </div>
+            <div class="carousel-caption">
+              <h1 class="texto-banner">{{corpo.bannertext}}</h1>
+              <h1 class="texto-banner">{{corpo.bannertext2}}</h1>
+              <hr class="linha laranja2">
+            </div>
+          </div>
+        </div>
+        <!--/.Slides-->
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+      </div>
+      <!--/.Carousel Wrapper-->
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 style="font-weight: 500;margin-top: 10px;">{{corpo.product}}</h3>
+          <hr class="linha laranja2">
+        </div>
+      </div>
+
+    </div>
+    <div class="container mt-3 mb-5">
+      <div class="row">
+        <div class="col">
+          <!--Carousel Wrapper-->
+          <div class="carousel slide carousel-multi-item" data-ride="carousel" id="multi-item-example">
+            <!--Controls-->
+            <div class="controls-top float-right">
+              <a class="pp ll prev" data-slide="prev" href="#multi-item-example">
+                <i class="fa fa-chevron-left pp"></i>
+              </a>
+              <a class="nx next" data-slide="next" href="#multi-item-example">
+                <i class="fa fa-chevron-right rr pp"></i>
+              </a>
+            </div>
+            <!--/.Controls-->
+            <div class="carousel-inner" role="listbox">
+              <!--First slide-->
+              <div class="carousel-item active ">
+                <div class="row">
+                  <div class="col-md-3 col-6 compra">
+                    <div class="card  text-center">
+                      <img alt="Card image cap" class="img-fluid gg" src="assets/imgs/item.png" style="height: 230px;width: auto;padding: 10px">
+                      <div class="card-body">
+                        <p class="cinza gray">{{product.title}}</p>
+                        <img src="assets/imgs/stars.svg" class="text-center star">
+                        <p class="risco gray">{{product.priceold}}</p>
+                        <p class="novo">{{product.pricenew}}</p>
+                        <p class="ou gray">{{product.price}}</p>
+                        <button class="buy btn btn-secondary">
+                          <img id="bugou" src="assets/imgs/kart.svg" alt="">{{product.buy}}</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6 compra">
+                    <div class="card  text-center">
+                      <img src="assets/imgs/Flag.svg" class="flag">
+                      <img alt="Card image cap" class="img-fluid gg" src="assets/imgs/item.png" style="height: 230px;width: auto;padding: 10px">
+                      <div class="card-body">
+                        <p class="cinza gray">{{product.title}}</p>
+                        <img src="assets/imgs/stars.svg" class="text-center star">
+                        <p class="risco gray">{{product.priceold}}</p>
+                        <p class="novo">{{product.pricenew}}</p>
+                        <p class="ou gray">{{product.price}}</p>
+                        <button class="buy btn btn-secondary">
+                          <img id="bugou" src="assets/imgs/kart.svg" alt="">{{product.buy}}</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-6 compra onze">
+                    <div class="card  text-center">
+                      <img alt="Card image cap" class="img-fluid" src="assets/imgs/item.png" style="height: 230px;width: auto;padding: 10px">
+                      <div class="card-body">
+                        <p class="cinza gray">{{product.title}}</p>
+                        <img src="assets/imgs/stars.svg" class="text-center star">
+                        <p class="risco gray">{{product.priceold}}</p>
+                        <p class="novo">{{product.pricenew}}</p>
+                        <p class="ou gray">{{product.price}}</p>
+                        <button class="buy btn btn-secondary">
+                          <img id="bugou" src="assets/imgs/kart.svg" alt="">{{product.buy}}</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6 compra doze">
+                    <div class="card  text-center">
+                      <img alt="Card image cap" class="img-fluid" src="assets/imgs/item.png" style="height: 230px;width: auto;padding: 10px">
+                      <div class="card-body">
+                        <p class="cinza gray">{{product.title}}</p>
+                        <img src="assets/imgs/stars.svg" class="text-center star">
+                        <p class="risco gray">{{product.priceold}}</p>
+                        <p class="novo">{{product.pricenew}}</p>
+                        <p class="ou gray">{{product.price}}</p>
+                        <button class="buy btn btn-secondary">
+                          <img id="bugou" src="assets/imgs/kart.svg" alt="">{{product.buy}}</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/.First slide-->
+
+
+            </div>
+            <!--/.Slides-->
+
+          </div>
+          <!--/.Carousel Wrapper-->
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small azul2 pt-4">
+
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+          <div class="col-md-12">
+              <h4 class="texto-banner">{{corpo.location}}</h4>
+              <hr class="linha laranja2">
+          </div>
+          <div class="col-md-4">
+            <div class="row text-left">
+              <div class="col-md-6">
+                  <h5 class="texto-banner">São Paulo</h5>
+                  <p style="margin-top: 0px; margin-bottom: 0px">Rua do Rócio, 423/1801</p>
+                  <p style="margin-top: 0px; margin-bottom: 0px">Vila Olípia - SP</p>
+                  <p style="margin-top: 0px; margin-bottom: 0px">04552-000</p>
+                  <p style="margin-top: 0px; margin-bottom: 0px">+55 11 3333 3333</p>
+              </div>
+              <div class="col-md-6">
+                  <h5 class="texto-banner">Rio de Janeiro</h5>
+                  <p style="margin-top: 0px; margin-bottom: 0px">Vol. da Pátria, 301/702</p>
+                  <p style="margin-top: 0px; margin-bottom: 0px">Botafogo - RJ</p>
+                  <p style="margin-top: 0px; margin-bottom: 0px">22270-000</p>
+                  <p style="margin-top: 0px; margin-bottom: 0px">+55 11 3333 3333</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <button class="btn btn-danger laranja2"><img  style="padding-right: 8px" src="assets/imgs/mail.svg" alt="">{{corpo.email}}</button><br>
+            <button class="btn btn-danger laranja2"><img  style="padding-right: 8px" src="assets/imgs/tel.svg" alt="">{{corpo.tel}}</button>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <img src="assets/imgs/footer.svg" alt="" style="margin-top: 70px">
+          </div>
+
+
+
+
+
+
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center verde2 py-1" style="background-color:#2EC4B6;     margin-top: 12px;">
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+  </div>
+
+
+
+
+
+
+  <script src="https://unpkg.com/vue"></script>
+
+
+  <script>
+
+
+
+    var app = new Vue({
+      el: "#app",
+      data: {
+        titulo: "Aprendendo Vue.js",
+        corpo: {
+          seach: 'O que está Procurando ?',
+          user: 'Minha Conta',
+          bannertext: 'Nossa especialidade:',
+          bannertext2: 'experiência de compra.',
+          product: 'Produtos',
+          location: 'Localização',
+          email: 'entre em contato',
+          tel: 'Fale com o nosso consulto online'
+
+
+        },
+        product: {
+          title: 'Tênis couro Puma r698 q4 v2',
+          priceold: 'de R$ 299,00',
+          pricenew: 'por R$ 399,00',
+          price: 'ou em 3x de R$ 133,00',
+          buy: 'Comprar'
+        }
+      },
+      methods: {
+        pt() {
+          this.corpo = {
+            seach: 'O que está Procurando ?',
+            user: 'Minha Conta',
+            bannertext: 'Nossa especialidade:',
+            bannertext2: 'experiência de compra.',
+            product: 'Produtos',
+            location: 'Localização',
+            email: 'entre em contato',
+            tel: 'Fale com o nosso consulto online'
+          }
+          this.product = {
+            title: 'Tênis couro Puma r698 q4 v2',
+            priceold: 'de R$ 299,00',
+            pricenew: 'por R$ 399,00',
+            price: 'ou em 3x de R$ 133,00',
+            buy: 'Comprar'
+          }
+
+
+        },
+        en() {
+          this.corpo = {
+            seach: 'What are you looking for ?',
+            user: 'My account',
+            bannertext: 'Our specialty:',
+            bannertext2: 'shopping experience.',
+            product: 'Products',
+            location: 'Location',
+            email: 'contact',
+            tel: 'Contact our online consultation'
+          }
+          this.product = {
+            title: 'Tênis couro Puma r698 q4 v2',
+            priceold: 'of $ 299,00',
+            pricenew: 'for $ 399,00',
+            price: 'or in 3x of $ 133,00',
+            buy: 'buy'
+          }
+
+        },
+        sh() {
+          this.corpo = {
+            seach: 'Qué estás buscando ?',
+            user: 'Mi cuenta',
+            bannertext: 'Nuestra especialidad:',
+            bannertext2: 'experiencia de compra.',
+            product: 'Productos',
+            location: 'ubicación',
+            email: 'Entre en contacto',
+            tel: 'Hable con nuestro  consulado online'
+          }
+          this.product = {
+            title: 'Tenis de cuero Puma r698 q4 v2',
+            priceold: 'de $ 299,00',
+            pricenew: 'por $ 399,00',
+            price: 'o en 3x de $ 133,00',
+            buy: 'Comprar'
+          }
+
+        }
+
+
+      }
+
+    });
+  </script>
+
+
+
+</body>
+<script type="text/javascript" src="node_modules/mdbootstrap/js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+
+</html>
